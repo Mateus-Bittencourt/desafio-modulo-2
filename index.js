@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   async function fetchWeather(latitude, longitude) {
-    console.log(latitude, longitude)
+    console.log(latitude, longitude);
     try {
       const response = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=temperature_2m`);
       if (!response.ok) {
@@ -68,5 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function showResults() {
     const resultsDiv = document.getElementById('results');
     resultsDiv.style.display = 'block';
+    // Rola a página até a div de resultados
+    resultsDiv.scrollIntoView({ behavior: 'smooth' });
   }
 });
