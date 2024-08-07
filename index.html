@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio Modulo 2</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <h2>DncWheter</h2>
+
+      <ul>
+        <li><a href="#" id="home">Endereço</a></li>
+        <li><a href="#" id="about">Previsão do tempo</a></li>
+      </ul>
+    </nav>
+    <div id="container">
+      <div id="title">
+        <h2>
+          Descubra Mais com Precisão:<br />
+          Previsões do Tempo e endereços<br />
+          em tempo real.
+        </h2>
+        <img src="images/clouds.svg" alt="" />
+      </div>
+
+      <div id="form-container">
+        <div id="form-content">
+          <form
+            id="form"
+            action="https://api.sheetmonkey.io/form/92WvPxTMJvxaRvmgqd7PdU"
+            method="post"
+          >
+            <label for="Nome">Primeiro Nome:</label><br />
+            <input
+              type="text"
+              placeholder="Insira seu primeiro nome:"
+              name="Name"
+              required
+            /><br />
+            <label for="Email">E-mail:</label><br />
+            <input
+              type="email"
+              placeholder="Insira seu e-mail"
+              name="Email"
+              required
+            /><br />
+            <label for="CEP">Digite o CEP:</label><br />
+            <input
+              type="cep"
+              placeholder="Insira o CEP"
+              name="CEP"
+              required
+            /><br />
+            <label for="Latitude"
+              >Digite a latitude e longitude para saber a previsão:</label
+            ><br />
+            <input
+              class="latlong"
+              type="text"
+              placeholder="Latitude"
+              name="Latitude"
+              required
+            />
+            <input
+              class="latlong"
+              type="text"
+              placeholder="Longitude"
+              name="Longitude"
+              required
+            /><br />
+            <input
+              type="hidden"
+              name="Created"
+              value="x-sheetmonkey-current-date-time"
+            />
+            <button type="submit">Acessar</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="results">
+        <div class="address-results-title">
+          <h1>Resultado da busca por CEP:</h1>
+          <img src="images/loc.svg" alt="" />
+        </div>
+
+        <div id="address-results-content">
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Logradouro/nome</th>
+                <th>Bairro/Distrito</th>
+                <th>Localidade/UF</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Justino Cobra</td>
+                <td>Vila Ema</td>
+                <td>SP</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="address-results-title">
+          <h1>Previsão do tempo na região:</h1>
+          <img src="images/clouds-2.svg" alt="" />
+        </div>
+
+        <div id="weather-results-container">
+          <div id="weather-results">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>Desenvolvido por Mateus Bittencourt | DncWheter</p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

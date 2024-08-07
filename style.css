@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#navbar {
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: space-between;
+  background: rgba(12, 112, 242, 1);
+}
+
+#navbar h2 {
+  padding: 0.7rem 1.2rem;
+}
+
+#navbar ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0.7rem 1.2rem;
+  margin-top: 0.2rem;
+  font-family: "inter";
+}
+
+#navbar a {
+  color: rgba(255, 255, 255, 1);
+  padding: 0.7rem 0.7rem;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  padding-bottom: 10rem;
+}
+
+#title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+
+#title h2 {
+  font-weight: 800;
+  padding-top: 2rem;
+  margin-right: 4rem;
+}
+
+#form-container {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+#form-content {
+  background-color: rgba(255, 255, 255, 1);
+  width: 40rem;
+  /* height: 930px; */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+  margin-bottom: 6rem;
+}
+
+#form-content form {
+  display: block;
+}
+
+#container {
+  background-color: rgba(242, 242, 242, 1);
+}
+
+input {
+  width: 400px;
+  height: 40px;
+  background-color: #eaece5;
+  margin: 10px 0;
+  border: 0px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.latlong {
+  width: 188px;
+  margin-right: 10px;
+}
+
+button {
+  font-size: 20px;
+  margin-top: 2rem;
+  background-color: rgba(12, 112, 242, 0.85);
+  height: 40px;
+  width: 410px;
+  color: #eaece5;
+  border: 0px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+button:hover {
+  background-color: rgba(12, 112, 242, 1);
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 5px 8px 15px #0a2e3d75;
+  transition-duration: 0.7s;
+}
+
+.address-results-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.address-results-title h1 {
+  margin-top: 30px;
+  margin-right: 0.5rem;
+}
+
+.address-results-title img {
+  width: 120px;
+}
+
+#address-results-content {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.styled-table {
+  border-collapse: separate; /* Mudança para permitir border-radius */
+  border-spacing: 0; /* Remove o espaçamento entre células */
+  margin: 2rem 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px; /* Adiciona o border-radius */
+  overflow: hidden; /* Garante que o border-radius funcione */
+}
+
+.styled-table thead tr {
+  background: rgba(12, 112, 242, 1);
+
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table tbody td {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 40px;
+  text-align: center; /* Alinha o texto horizontalmente ao centro */
+  vertical-align: middle; /* Alinha o texto verticalmente ao centro */
+  font-weight: bold; /* Aumenta o peso da fonte */
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+/* Ajuste dos cantos das células da primeira linha e última linha */
+.styled-table thead tr th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.styled-table thead tr th:last-child {
+  border-top-right-radius: 10px;
+}
+
+.styled-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.styled-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+#weather-results {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 32rem;
+}
+
+#weather-results p {
+  font-weight: 600;
+}
+
+#weather-results-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 6rem;
+}
+
+#footer {
+  background: rgba(12, 112, 242, 1);
+  display: flex;
+  justify-content: right;
+  color: rgba(255, 255, 255, 1);
+  padding: 1rem;
+}
+
+#results {
+  display: none;
+}
